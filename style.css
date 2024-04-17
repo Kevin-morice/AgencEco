@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-100 {
+    width: 100%;
+}
+.col-50 {
+    width: 50%;
+}
+.col-33 {
+    width: 33.33%;
+}
+.col-25 {
+    width: 25%;
+}
+.col-20 {
+    width: 20%;
+}
+.text-center {
+    text-align: center;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-200 {
+    margin-top: 200px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.ml-70 {
+    margin-left: 70% ;
+}
+.pad-50 {
+    padding: 50px;
+}
+.bg-dark {
+    background-color:#053b44 ;
+}
+.bg-dark2 {
+    background-color:#042a31 ;
+}
+.text-g-t {
+    font-size: xx-large;
+}
+.text30px {
+    font-size: 30px;
+}
+.text50px {
+    font-size: 50px;
+}
+.text-blanc {
+    color: white;
+}
+.text-gris {
+    color: rgb(160, 159, 159);
+}
+.text-p-t {
+    font-size: small;
+}
+.jaune {
+    color: #d5f31f;
+}
+.vert {
+    color: #029d5b;
+}
+
+        /***** BARRE DE NAVIGATION *****/
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    font-size: calc(0.3rem + 1.5vw);
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px;
+}
+#icons {
+    cursor: pointer;
+    display: none;
+}
+          
+            /***** IMAGE D'ACCEUIL ******/
+
+.acceuil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-end{
+    text-align: end;
+}
+.banner-text{
+    margin-top: -200px;
+}
+
+            /***** NOTRE EQUIPE *****/
+
+.team_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+        /*****NOTRE SERVICE*****/
+
+.cadre {
+    background-color: rgb(241, 241, 241);
+    padding: 100px;
+    align-items: center;
+    border-radius: 5%;
+    height: 200px;
+}
+
+                /***** CONTACT *****/
+
+section#contact {
+    background-color: #053b44;
+    padding: 50px 0;
+}
+section#contact .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+section#contact .container .title {
+    text-align: center;
+    color: #D5F31F;
+    margin-bottom: 50px;
+}
+section#contact .container .title h4 {
+    font-size: 2.2em;
+}
+section#contact .container .title p {
+    color: white;
+    font-size: 1em;
+}
+section#contact .container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+.form-control {
+    width: 47%;
+} 
+
+.form-control2 {
+    width: 100%;
+} 
+section#contact .container form input:hover,
+section#contact .container form textarea:hover {
+    border-bottom: 2px solid #0d8196 ;
+}
+section#contact .container form input,
+sectioN#contact .container form textarea {
+    background-color: #053b44;
+    color: white;
+    margin: 10px 0;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white ;
+    transition: 0.2s;
+}
+sectioN#contact .container form textarea {  
+    width: 100%;
+    resize: none;
+    height: 150px;
+}
+.btn-form {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #D5F31F;
+    color: #053b44;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+        /**** A PROPOS DE NOUS ****/
+
+.img-team {
+    border-radius: 5%;
+    width: 95%;
+    margin: 5%;
+}
+.cadre2 { 
+    border: solid 2px #053b44;
+    border-radius: 3%;
+    justify-content: space-around;
+    width: 95%;
+    margin: 5%;
+    height: 84%;
+}
+.img-dans-cercle {
+    border: solid 6px #053b44;
+    padding: 30px;
+    border-radius: 100%;
+    margin: 10px;
+    height: 40px;
+    width: 40px
+}
+
+        /**** NOTRE GALERIE ****/
+
+.slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}      
+.slides {
+    display: flex;
+    }
+          
+.slides img {
+    width: 100%;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+}        
+.prev {
+    left: 0;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.next {
+    right: 0;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.next i, .prev i {
+    margin-left: 4px;
+}
+button { 
+    cursor: pointer;
+    background: transparent;
+    padding: auto;
+}
+button:hover {
+    background-color: black;
+    color: #D5F31F;
+}
+
+            /**** COLONE INFO ****/
+
+.logo {
+    font-size: 30px;
+    width: 40px;
+}
+
+            /**** COLONE COPYRIGHT ****/
+
+.logo-r-s {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+            /**** partie mobile ****/
+
+@media screen and (max-width: 1000px) {
+    .col-sm-100 {
+        width: 100%;
+    }
+    .col-sm-50 {
+        width: 50%;
+    }
+
+    .row-sm{
+        justify-content: center;
+        align-items: center;
+    }
+    .marg-sm{
+        margin-top: 20px;
+    }
+    .cadre {
+        margin: 50px;
+    }
+}
+@media (max-width: 800px) {
+    #icons {
+        display: block;
+    }
+    #icons:before {
+        content: "\2630";
+        margin: 20px;
+    }
+    .active #icons:before {
+        content: "\2715";
+    }
+    nav ul {
+        position: fixed;
+        left: -110%;
+        top: 5%;
+        flex-direction: column;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        transition: 0.50s;
+        margin: 0;
+    }
+    nav li {
+        padding: 10px 0;
+    }
+    nav li:hover {
+        background: rgb(245, 245, 245);
+    }
+    nav.active ul {
+        left: 0;
+    }
+}
