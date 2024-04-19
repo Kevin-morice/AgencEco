@@ -5,6 +5,7 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 .container {
     max-width: 1200px;
@@ -392,7 +393,7 @@ sectioN#contact .container form textarea {
     nav ul {
         position: fixed;
         left: -110%;
-        top: 9%;
+        top: 50px;
         flex-direction: column;
         background: rgb(255, 255, 255);
         width: 100%;
