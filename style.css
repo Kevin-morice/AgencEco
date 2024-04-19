@@ -14,6 +14,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+            /**** colonne ****/
+
 .col-100 {
     width: 100%;
 }
@@ -29,11 +32,14 @@ body {
 .col-20 {
     width: 20%;
 }
-.text-center {
-    text-align: center;
-}
+
+            /**** marge ****/
+
 .mt-10 {
     margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
 }
 .mt-50 {
     margin-top: 50px;
@@ -59,11 +65,20 @@ body {
 .pad-50 {
     padding: 50px;
 }
+
+            /**** background ****/
+
 .bg-dark {
     background-color:#053b44 ;
 }
 .bg-dark2 {
     background-color:#042a31 ;
+}
+
+            /**** texte ****/
+
+.text-center {
+    text-align: center;
 }
 .text-g-t {
     font-size: xx-large;
@@ -83,6 +98,9 @@ body {
 .text-p-t {
     font-size: small;
 }
+.text-dark {
+    color: #07414b;
+}
 .jaune {
     color: #d5f31f;
 }
@@ -90,7 +108,7 @@ body {
     color: #029d5b;
 }
 
-        /***** BARRE DE NAVIGATION *****/
+            /***** BARRE DE NAVIGATION *****/
 
 li {
     list-style: none;
@@ -120,6 +138,7 @@ nav ul {
 #icons {
     cursor: pointer;
     display: none;
+    font-size: 40px;
 }
           
             /***** IMAGE D'ACCEUIL ******/
@@ -146,7 +165,7 @@ nav ul {
     padding: 20px;
 }
 
-        /*****NOTRE SERVICE*****/
+            /*****NOTRE SERVICE*****/
 
 .cadre {
     background-color: rgb(241, 241, 241);
@@ -156,7 +175,7 @@ nav ul {
     height: 200px;
 }
 
-                /***** CONTACT *****/
+            /***** CONTACT *****/
 
 section#contact {
     background-color: #053b44;
@@ -231,31 +250,54 @@ sectioN#contact .container form textarea {
     margin-top: 5%;
 }
 
-        /**** A PROPOS DE NOUS ****/
+            /**** A PROPOS DE NOUS ****/
 
 .img-team {
     border-radius: 5%;
     width: 95%;
     margin: 5%;
 }
-.cadre2 { 
+.cadre2 {
+    text-align: center;
     border: solid 2px #053b44;
-    border-radius: 3%;
-    justify-content: space-around;
-    width: 95%;
+    border-radius: 10px;
+    padding: 40px;
     margin: 5%;
-    height: 84%;
 }
-.img-dans-cercle {
-    border: solid 6px #053b44;
-    padding: 30px;
-    border-radius: 100%;
-    margin: 10px;
-    height: 40px;
-    width: 40px
+.titre1 {
+    font-size: 24px;
+}
+.texte1 {
+    font-size: 16px;
+}
+.cadres-ronds {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cadre-avec-titre {
+    text-align: center;
+    }
+.cadre-rond {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 6px #053b44 ;
+    margin: 0 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadre-rond img {
+    max-width: 50px;
+    max-height: 50px;
+}
+.titre-cadre {
+    font-size: 16px;
 }
 
-        /**** NOTRE GALERIE ****/
+            /**** NOTRE GALERIE ****/
 
 .slider {
     position: relative;
@@ -290,28 +332,23 @@ sectioN#contact .container form textarea {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .next i, .prev i {
     margin-left: 4px;
 }
-button { 
-    cursor: pointer;
-    background: transparent;
-    padding: auto;
-}
-button:hover {
+.cadre-rond :hover {
     background-color: black;
-    color: #D5F31F;
 }
 
-            /**** COLONE INFO ****/
+            /**** INFO ****/
 
 .logo {
     font-size: 30px;
     width: 40px;
 }
 
-            /**** COLONE COPYRIGHT ****/
+            /**** COPYRIGHT ****/
 
 .logo-r-s {
     border: 1px solid white;
@@ -355,7 +392,7 @@ button:hover {
     nav ul {
         position: fixed;
         left: -110%;
-        top: 5%;
+        top: 9%;
         flex-direction: column;
         background: rgb(255, 255, 255);
         width: 100%;
