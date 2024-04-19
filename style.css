@@ -268,9 +268,6 @@ sectioN#contact .container form textarea {
 .titre1 {
     font-size: 24px;
 }
-.texte1 {
-    font-size: 16px;
-}
 .cadres-ronds {
     display: flex;
     justify-content: center;
@@ -360,14 +357,13 @@ sectioN#contact .container form textarea {
 
             /**** partie mobile ****/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .col-sm-100 {
         width: 100%;
     }
     .col-sm-50 {
         width: 50%;
     }
-
     .row-sm{
         justify-content: center;
         align-items: center;
@@ -377,6 +373,9 @@ sectioN#contact .container form textarea {
     }
     .cadre {
         margin: 50px;
+    }
+    .img-team {
+        margin: auto;
     }
 }
 @media (max-width: 800px) {
@@ -409,5 +408,41 @@ sectioN#contact .container form textarea {
     }
     nav.active ul {
         left: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .text30px {
+        font-size: 10px;
+    }
+    .text50px {
+        font-size: 30px;
+    }
+    .text-end{
+        text-align: end;
+    }
+    .banner-text{
+        margin-top: -110px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cadre {
+        height: 80px;
+        width: 80px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .cadre-rond {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: solid 3px #053b44;
+        margin: 0 15px;
+        padding: 1px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cadre-rond img {
+        max-width: 30px;
     }
 }
