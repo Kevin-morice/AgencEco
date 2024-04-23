@@ -48,6 +48,9 @@ body {
 .mt-100 {
     margin-top: 100px;
 }
+.mt-101 {
+    margin-top: 100px;
+}
 .mt-200 {
     margin-top: 200px;
 }
@@ -299,7 +302,7 @@ sectioN#contact .container form textarea {
 
 .slider {
     position: relative;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
     overflow: hidden;
 }      
@@ -320,6 +323,7 @@ sectioN#contact .container form textarea {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    background-color: white;
 }
 .next {
     right: 0;
@@ -330,12 +334,17 @@ sectioN#contact .container form textarea {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    background-color: white;
     transition: background-color 0.3s ease;
 }
 .next i, .prev i {
     margin-left: 4px;
+    color: rgb(0, 0, 0);
 }
-.cadre-rond :hover {
+.next i, .prev i :hover {
+    color: #D5F31F;
+}
+.next , .prev :hover {
     background-color: black;
 }
 
@@ -376,6 +385,9 @@ sectioN#contact .container form textarea {
     }
     .img-team {
         margin: auto;
+    }
+    .cadre2 {
+        border: solid 4px #053b44;
     }
 }
 @media (max-width: 800px) {
@@ -436,13 +448,52 @@ sectioN#contact .container form textarea {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        border: solid 3px #053b44;
-        margin: 0 15px;
+        border: solid 4px #053b44;
+        margin: 0 12px;
         padding: 1px;
         justify-content: center;
         align-items: center;
     }
     .cadre-rond img {
         max-width: 30px;
+    }
+    .titre-cadre {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .cadre-rond {
+        width: 60%;
+        height: 50px;
+        border-radius: 50%;
+        border: solid 3px #053b44;
+        margin: 0 17px;
+        padding: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+    .titre-cadre {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .col-sm-100-2 {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 1101px) {
+    .logo-sm {
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .mt-100 {
+        margin-top: 30px;
     }
 }
