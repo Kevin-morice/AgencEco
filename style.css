@@ -87,7 +87,7 @@ body {
 }
 
             /**** texte ****/
-
+           
 .text-center {
     text-align: center;
 }
@@ -117,6 +117,9 @@ body {
 }
 .vert {
     color: #029d5b;
+}
+em2 {
+    font-size: 20px;
 }
 
             /***** BARRE DE NAVIGATION *****/
@@ -331,13 +334,13 @@ sectioN#contact .container form textarea {
     margin-top: 20px; 
 }             
 .prev, .next {
-    border: 1px solid black;
+    border: 1.6px solid black;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255); 
     color: rgb(0, 0, 0);
-    font-size: 24px; 
+    font-size: 18px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -496,5 +499,10 @@ sectioN#contact .container form textarea {
 @media screen and (max-width: 1100px) {
     .mt-100 {
         margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .col-sm-103 {
+        width: 100%;
     }
 }
